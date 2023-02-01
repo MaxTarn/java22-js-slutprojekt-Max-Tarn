@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer ></script>
+    <script src="js/sidebar.js" defer></script>
+    <title>Flickr Bild Galleri</title>
+</head>
+<body>
+
+    <div id="top">
+        <button class="openbtn">
+            ☰ New Image Search
+        </button>
+
+        <h2>Flickr Image Search</h1>
+        <select name="sortBy" id="sortBy" >
+            <option value="relevance" selected>Relevance </option>
+            <option value="date-posted-desc">Date posted: newest to oldest</option>
+            <option value="date-posted-asc">Date posted: oldest to newest</option>
+            <option value="date-taken-asc">Date taken : oldest to newest</option>
+            <option value="date-taken-desc">Date taken: newest to oldest </option>
+            <option value="interestingness-desc">Interestingness: high to low</option>
+            <option value="interestingness-asc">Interestingness: low to high</option>
+        </select>
+            
+        
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+        <a class="closebtn">×</a>
+        <form action="" class="searchForm">
+
+            <h1>Image search</h1>
+    
+            <div>
+                <label for="searchFor">Search for this:</label>
+                <input type="text" name="searchFor"  placeholder="ex. green forest" required id="searchFor">
+    
+            </div>
+    
+    
+            <div>
+                <label for="imgAmount">Image Amount:</label>
+                <input type="number" name="imgAmount" id="imgAmount"  min="1" max="100" required>
+            </div>
+    
+            <div>
+                <label for="imgSize">Image size:</label>
+                <select name="imgSize" id="imgSize" class="select">
+                    <option value="m" >Small</option>
+                    <option value="n">Medium</option>
+                    <option value="w">Large</option>
+                </select>
+            </div>
+            
+    
+            <div>
+                <button type="submit">Search</button>
+            </div>
+           
+        </form>
+    </div>
+
+    <a href="#" class="goToTop">
+        <button >^</button>
+    </a>
+    
+
+    <div class="containerForAllImgs">
+    </div>
+
+
+
+
+</body>
+</html>
